@@ -1,6 +1,7 @@
 * {
     padding-left: 0;
     padding-right: 0;
+    margin: 0;
 
 }
 
@@ -153,3 +154,5 @@ $color-text: #fff;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@import 'mobile.scss';
