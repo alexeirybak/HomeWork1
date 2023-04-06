@@ -86,6 +86,7 @@ $color-text: #fff;
         &:hover {
             cursor: pointer;
         }
+
     }
 }
 
@@ -99,7 +100,6 @@ $color-text: #fff;
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(12, 1fr);
-    padding-bottom: 128px;
 
     &__game {
         grid-column: span 4;
@@ -153,6 +153,70 @@ $color-text: #fff;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.middle-top {
+    background-color: #000915;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    padding-bottom: 233px;
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        max-width: 584px;
+        grid-column: span 6;
+
+        &_title {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 59px;
+            color: $color-text;
+        }
+
+        &_text {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 32px;
+            color: $color-text
+        }
+
+    }
+
+    &__right {
+        grid-column: span 6;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.buttons-box {
+    &_buttonGameOne {
+        box-sizing: border-box;
+        background: #9C0332;
+        border-radius: 30px;
+        height: 48.6px;
+        width: 234px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: $color-text;
+        border: none;
+        transition: all .3s;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
 
 @import 'mobile.scss';
