@@ -16,3 +16,19 @@ function game1(userNum) {
         alert('нет такого месяца')
     }
 }
+
+function game2() {
+    let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    fruits = fruits.sort(() => Math.random() - 0.5);
+    alert(fruits);
+    let first = prompt('Введите первый фрукт');
+    let second = prompt('Введите второй фрукт');
+
+    if (fruits[0].toLowerCase() == first.toLowerCase() && fruits[6].toLowerCase() == second.toLowerCase()) {
+        alert('Поздравляю! Вы угадали!');
+    } else if (fruits[0].toLowerCase() == first.toLowerCase() || fruits[6].toLowerCase() == second.toLowerCase()) {
+        alert('Вы были близки к победе!');
+    } else {
+        alert('Не угадал ни разу! Попробуй еще');
+    }
+}

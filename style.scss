@@ -219,4 +219,48 @@ $color-text: #fff;
     }
 }
 
+.middle-middle {
+    padding-top: 239px;
+    background-color: #000915;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    padding-bottom: 239px;
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        max-width: 584px;
+        grid-column: span 6;
+
+        &_title {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 59px;
+            color: $color-text;
+        }
+
+        &_text {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 32px;
+            color: $color-text
+        }
+
+    }
+
+    &__left {
+        grid-column: span 6;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+
 @import 'mobile.scss';
