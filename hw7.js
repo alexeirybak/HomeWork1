@@ -63,6 +63,19 @@
 // };
 // console.log(randomMassive);
 
+let value = Number(prompt('Введите число'));
+let size = Math.floor(value / 2);
+function getNum(value) {
+
+    let randomMassive = [];
+    for (let i = 0; i < size; i++) {
+        randomMassive[i] = Math.round((Math.random() * value));
+    }
+    return randomMassive;
+}
+
+console.log(getNum(value));
+
 
 
 
@@ -87,9 +100,9 @@
 
 
 
-// let currentDate = new Date();
-// currentDate.setDate(73);
-// console.log(currentDate);
+let currentDate = new Date();
+currentDate.setDate(currentDate.getDate() + 73);
+console.log(currentDate);
 
 
 // const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
